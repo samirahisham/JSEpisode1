@@ -6,6 +6,13 @@
  */
 function greet(name) {
   // Your code here
+    if (name) {
+    console.log(`Hello ${name}`)
+  }
+
+  else   
+  console.log(`Hello`)
+
 }
 
 /**
@@ -15,6 +22,10 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  if (n%2!==0){
+    return true
+  }
+  else return false
 }
 
 /**
@@ -30,6 +41,7 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  // for 
 }
 
 /**
@@ -37,13 +49,15 @@ function oddsSmallerThan(n) {
  * - receives a number n
  * - returns its square if it's odd
  * - returns its double if it's even
- *
- * e.g.
- * squareOrDouble(16) -> 32
- * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  // Your code here
+  let calc;
+  if(n%2!==0){
+    calc=n*n
+  }
+  else calc=n*2
+
+  return calc
 }
 
 /**
